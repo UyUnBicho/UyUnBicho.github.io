@@ -9,14 +9,18 @@
     <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 
 <body>
+
+    <span class="ir-arriba icon-arrow-up2">↑</span>
+
     <header>
         <nav>
             <a href="#portafolio">Emprendimientos</a>
-            <a href="#">Acerca de</a>
-            <a href="#formulario">Contacto</a>
+            <a href="#contact">Acerca de</a>
+            <a href="#formu">Contacto</a>
         </nav>
         <section class="textos-header">
             <h1>¡Uy Un Bicho!</h1>
@@ -29,67 +33,55 @@
             </svg></div>
     </header>
     <main>
-        <section class="portafolio">
+        <section class="portafolio" id="portafolio">
             <div class="contenedor">
                 <h2 class="titulo">Emprendimientos</h2>
                 <div class="galeria-port">
                     <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
+                        <img src="newimag/streetfood.jpeg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Mas Información</p>
+                            <a href="streetfood.html"><img src="img/icono1.png" alt=""></a>
+                            <p>StreetFood</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
+                        <img src="newimag/faramacias luis.jpg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Mas Información</p>
+                            <a href="farmaciasluis.html"><img src="img/icono1.png" alt=""></a>
+                            <p>Farmacias "San Luis" Uyumbicho</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
+                        <img src="newimag/cmedig.jpg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Mas Información</p>
+                            <a href="centromege.html"><img src="img/icono1.png" alt=""></a>
+                            <p>Centro medico Gerabi
+                            </p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
+                        <img src="newimag/algodones.png" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Mas Información</p>
+                            <a href="algodones.html"><img src="img/icono1.png" alt=""></a>
+                            <p>Algodones Arcoíris MTJ</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
+                        <img src="newimag/vinos.png" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Mas Información</p>
+                            <a href="vinos.html"><img src="img/icono1.png" alt=""></a>
+                            <p>VINOS DAVID CASIANO</p>
                         </div>
                     </div>
                     <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
+                        <img src="newimag/pizzas.jpg" alt="">
                         <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Mas Información</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
-                            <p>Mas Información</p>
-                        </div>
-                    </div>
-                    <div class="imagen-port">
-                        <img src="newimag/fondogris.png" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icono1.png" alt="">
+                            <a href="pizzas.html"><img src="img/icono1.png" alt=""></a>
                             <p>Mas Información</p>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -97,26 +89,27 @@
             <div class="contenedor">
                 <h2 class="titulo">Nuestros servicios</h2>
                 <div class="servicio-cont">
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion1.svg" alt="">
+                    <div class="servicio-ind" id="">
+                        <img src="newimag/interrogacion.jpg" alt="">
                         <h3>¿Cómo funciona?</h3>
                         <p>Prestamos nuestros servicios como forma de promocionar tu emprendimiento y darlo a conocer a
                             mas gente</p>
                     </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion4.svg" alt="">
+                    <div class="servicio-ind" id="costo">
+                        <img src="newimag/dolar.png" alt="">
                         <h3>¿Cuánto cuesta?</h3>
-                        <p>Nuestro servicio costara una suscpricion mensual de $1 </p>
+                        <p>Nuestro servicio costara una suscpricion mensual de $4.50 </p>
                     </div>
-                    <div class="servicio-ind">
-                        <img src="img/ilustracion3.svg" alt="">
-                        <h3>Ejemplo</h3>
-                        <p>Mas informacion de nuestro servicio</p>
+                    <div class="servicio-ind" id="contra">
+                        <img src="newimag/pulgar.png" alt="">
+                        <h3>!Contrátanos YA¡</h3>
+                        <p>Publicita con los mejores</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contenedor sobre-nosotros">
+
+        <section class="contenedor sobre-nosotros" id="contact">
             <h2 class="titulo">Acerca de Nosotros</h2>
             <div class="contenedor-sobre-nosotros">
                 <img src="newimag/emprelogo.jpeg" alt="logo" class="imagen-about-us">
@@ -134,7 +127,7 @@
         </section>
     </main>
 
-    <section class="formula">
+    <section class="formula" id="formu">
         <form action="https://formspree.io/f/xayzorvz" method="POST">
             <div class="formulario">
                 <h5>Contáctanos</h5>
@@ -165,6 +158,11 @@
         </div>
         <h2 class="titulo-final">&copy; ¡Uy Un Bicho! | Grupo Emprendimiento</h2>
     </footer>
+
+
+
+
+    <script src="js/cosas.js"></script>
 </body>
 
 </html>
